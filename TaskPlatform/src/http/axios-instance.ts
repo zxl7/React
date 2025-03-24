@@ -30,7 +30,6 @@ class AxiosInstance {
 
   constructor(baseURL: string) {
     this.instance = Axios.create({ baseURL })
-
     this.instance.interceptors.request.use(requestHandler, errorHandler)
     this.instance.interceptors.response.use(responseHandler, errorHandler)
   }
