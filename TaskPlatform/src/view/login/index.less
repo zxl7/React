@@ -16,7 +16,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 0 0.625rem #c7c7c7;
+  }
+
+  .login-title {
+    margin-bottom: 24px;
+    color: #fff;
+  }
+  .login-input {
+    // 透明带有白色边框的输入框
+    background: rgba(255, 255, 255, 0.1);
+    border: 0.5px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    height: 36px;
+
+    input {
+      // 隐藏背景色
+      transition: background-color 50000s ease-in-out 0s;
+    }
   }
 }
